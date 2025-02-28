@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,26 +9,79 @@ body {
     color: white;
 }
 
-header {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
 }
 
-.logo {
-    width: 100px;
+.navbar .logo {
+    width: 80px;
 }
 
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
 .hero {
-    padding: 50px 20px;
+    padding: 80px 20px;
     background: rgba(0, 0, 0, 0.5);
 }
 
-.about {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.6);
+.hero h1 {
+    font-size: 36px;
 }
 
+.hero p {
+    font-size: 18px;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px 10px;
+}
+
+/* Services */
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+/* Footer */
 footer {
-    padding: 10px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
 }
